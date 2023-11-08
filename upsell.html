@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erro de Pagamento</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+  }
+  .error-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+  }
+  .error-banner {
+    background-color: red;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  .error-icon {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 100px;
+    margin: 60px 0;
+  }
+  .error-icon:before {
+    content: 'X';
+    color: white;
+    font-size: 50px;
+  }
+  .error-text {
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 600;
+
+  }
+  .error-button {
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="error-container">
+  <div class="error-banner">
+    OCORREU ERRO NO PAGAMENTO!
+  </div>
+  <div class="error-icon"></div>
+  <div class="error-text">
+    Tentamos realizar o seu pagamento, mais identificamos um erro com sua chave PIX
+  </div>
+  <button class="error-button" onclick="window.location.href='https://www.google.com';">
+    CADASTRAR NOVA CHAVE PIX
+  </button>
+</div>
+
+</body>
+</html>
